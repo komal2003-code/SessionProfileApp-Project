@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+        Document
+        </title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="register-box">
+        <h2>Register</h2>
+
+        <%- include("home.ejs") %>
+        <br>
+        <form name="frm" action="/register" method="POST">
+        <input type="text" name="name" value="" placeholder="Enter Name" class="control"/><br><br>
+<input type="text" name="email" value="" placeholder="Enter email" class="control"/><br><br>
+<input type="text" name="contact" value="" placeholder="Enter contact" class="control"/><br><br>
+<input type="text" name="username" value="" placeholder="Enter username" class="control"/><br><br>
+<input type="text" name="password" value="" placeholder="Enter password" class="control"/><br><br>
+<input type="submit" name="s" value="Register"/><br><br>
+<%=msg%>
+        </div>
+</form>
+        
+    </body>
+</html>
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <%- include("home.ejs") %>
+        <br>
+    <form name="frm" action="/validate" method="POST">
+        
+<input type="text" name="username" value="" placeholder="Enter username" class="control"/><br><br>
+<input type="password" name="password" value="" placeholder="Enter password" class="control"/><br><br>
+<input type="submit" name="s" value="Register" class="control"/><br><br>
+    </div>
+</form>
+</body>
+</html>

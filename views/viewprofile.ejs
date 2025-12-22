@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>My Profile</h2>
+        <div class="profile-box">
+    
+            <%- include("home.ejs") %>
+        <br>
+        view Login user profile<br>
+        <!-- <form name="frm" action="/updateprofile" method="post">
+        <input type="text" name="name" value="<%=lud.name%>" placeholder="Enter Name" class="control"/><br><br>
+<input type="text" name="email" value="<%=lud.email%>" placeholder="Enter email" class="control"/><br><br>
+<input type="text" name="contact" value="<%=lud.contact%>" placeholder="Enter contact" class="control"/><br><br>
+<input type="text" name="username" value="<%=lud.username%>" placeholder="Enter username" class="control"/><br><br>
+<input type="text" name="password" value="<%=lud.password%>" placeholder="Enter password" class="control"/><br><br>
+<input type="submit" name="s" value="update profile"/><br><br>
+</form> -->
+<form name="frm" action="/update" method="POST">
+<input type="text" name="name" value="<%=lud.name%>" placeholder="Enter Name" class="control"/><br><br>
+<input type="text" name="email" value="<%=lud.email%>" placeholder="Enter email" class="control"/><br><br>
+<input type="text" name="contact" value="<%=lud.contact%>" placeholder="Enter contact" class="control"/><br><br>
+<input type="text" name="username" value="<%=lud.username%>" placeholder="Enter username" class="control"/><br><br>
+<input type="text" name="password" value="<%=lud.password%>" placeholder="Enter password" class="control"/><br><br>
+<input type="submit" name="s" value="update profile"/><br><br>
+</form>
+        </div>
+    </div>
+
+</body>
+</html>
